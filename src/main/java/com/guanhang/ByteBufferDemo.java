@@ -9,8 +9,6 @@ import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 
 public class ByteBufferDemo {
-
-
     public static void readFile(String fileName) {
         try {
             RandomAccessFile randomAccessFile = new RandomAccessFile(fileName, "rw");
