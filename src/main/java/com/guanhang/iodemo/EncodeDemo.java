@@ -24,7 +24,7 @@ public class EncodeDemo {
         }
 
         System.out.println();
-        //java是双字节编码：utf-16be,中英文都是两个字节
+        //java是双字节编码：utf-16be,中英文都是两个字节,因此默认的字符串是该编码的
         //当字节序列是某种编码时，转换成字符串也需要相应的编码格式
 
         String str = new String(bytes, "utf-8");
