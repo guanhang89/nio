@@ -12,9 +12,7 @@ public class ReadCompletionHandler implements CompletionHandler<Integer, ByteBuf
     private AsynchronousSocketChannel channel;
 
     public ReadCompletionHandler(AsynchronousSocketChannel channel) {
-        if (this.channel != null) {
-            this.channel = channel;
-        }
+        this.channel = channel;
     }
 
     @Override

@@ -22,5 +22,35 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-all</artifactId>
+      <version>4.1.29.Final</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.msgpack/msgpack -->
+    <dependency>
+      <groupId>org.msgpack</groupId>
+      <artifactId>msgpack</artifactId>
+      <version>0.6.12</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
+    <dependency>
+      <groupId>com.google.protobuf</groupId>
+      <artifactId>protobuf-java</artifactId>
+      <version>3.6.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.jboss.marshalling/jboss-marshalling -->
+    <dependency>
+      <groupId>org.jboss.marshalling</groupId>
+      <artifactId>jboss-marshalling</artifactId>
+      <version>2.0.6.Final</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.jibx/jibx-run -->
+    <dependency>
+      <groupId>org.jibx</groupId>
+      <artifactId>jibx-run</artifactId>
+      <version>1.2.6</version>
+    </dependency>
   </dependencies>
 </project>

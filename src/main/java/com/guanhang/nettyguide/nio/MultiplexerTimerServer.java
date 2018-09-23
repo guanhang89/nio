@@ -82,6 +82,7 @@ public class MultiplexerTimerServer implements Runnable {
         }
         //读数据
         if (key.isReadable()) {
+            //读的时候拿的SocketChannel
             SocketChannel sc = (SocketChannel) key.channel();
             ByteBuffer buffer = ByteBuffer.allocate(1024);
             int readBytes = sc.read(buffer);
