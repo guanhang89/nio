@@ -44,6 +44,7 @@ public final class MarshallingCodeCFactory {
                 .getProvidedMarshallerFactory("serial");
         final MarshallingConfiguration configuration = new MarshallingConfiguration();
         configuration.setVersion(5);
+        configuration.setExceptionListener(new MarshallingException());
         UnmarshallerProvider provider = new DefaultUnmarshallerProvider(
                 marshallerFactory, configuration);
         MarshallingDecoder decoder = new MarshallingDecoder(provider, 1024);
@@ -60,6 +61,7 @@ public final class MarshallingCodeCFactory {
                 .getProvidedMarshallerFactory("serial");
         final MarshallingConfiguration configuration = new MarshallingConfiguration();
         configuration.setVersion(5);
+        configuration.setExceptionListener(new MarshallingException());
         MarshallerProvider provider = new DefaultMarshallerProvider(
                 marshallerFactory, configuration);
         MarshallingEncoder encoder = new MarshallingEncoder(provider);

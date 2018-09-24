@@ -36,6 +36,7 @@ public class SubReqClientHandler extends ChannelInboundHandlerAdapter {
         for (int i = 0; i < 10; i++) {
             ctx.write(subReq(i));
         }
+        System.out.println("client send msg over");
         ctx.flush();
     }
 
@@ -50,8 +51,7 @@ public class SubReqClientHandler extends ChannelInboundHandlerAdapter {
     }
 
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg)
-            throws Exception {
+    public void channelRead(ChannelHandlerContext ctx, Object msg) {
         System.out.println("Receive server response : [" + msg + "]");
     }
 

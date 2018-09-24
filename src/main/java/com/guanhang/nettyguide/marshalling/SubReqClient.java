@@ -40,8 +40,7 @@ public class SubReqClient {
                     .option(ChannelOption.TCP_NODELAY, true)
                     .handler(new ChannelInitializer<SocketChannel>() {
                         @Override
-                        public void initChannel(SocketChannel ch)
-                                throws Exception {
+                        public void initChannel(SocketChannel ch) {
                             ch.pipeline().addLast(
                                     MarshallingCodeCFactory
                                             .buildMarshallingDecoder());

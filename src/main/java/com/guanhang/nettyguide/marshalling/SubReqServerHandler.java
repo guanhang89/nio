@@ -30,6 +30,7 @@ public class SubReqServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg)
             throws Exception {
+        System.out.println("server start to read msg");
         SubscribeReq req = (SubscribeReq) msg;
         if ("Lilinfeng".equalsIgnoreCase(req.getUserName())) {
             System.out.println("Service accept client subscrib req : ["
